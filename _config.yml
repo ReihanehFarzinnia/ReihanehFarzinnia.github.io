@@ -1,6 +1,6 @@
 title: "Reihaneh Farzinnia"
 author: "Reihaneh Farzinnia"
-description: "Reihaneh Farzinnia"
+description: "PhD student at The University of Manchester"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -19,6 +19,11 @@ show_minimal: false             # remove all clutter
 
 navigation:                     # accepts {file, title, url, icon, sidebaricon}
   - {file: "archive.html", sidebaricon: home}
+  - {file: "index.md", sidebaricon: home}
+  - {file: "about.md", sidebaricon: address-card}
+  - {file: "cv.md", sidebaricon: file-alt}
+  - {file: "publications.md", sidebaricon: book}
+  - {file: "projects.md", sidebaricon: project-diagram}
   - {file: "README.md", sidebaricon: address-card}
 
 external:                       # accepts {file, title, url, icon, sidebaricon}
