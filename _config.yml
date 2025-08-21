@@ -20,7 +20,6 @@ show_minimal: false             # remove all clutter
 navigation:                     # accepts {file, title, url, icon, sidebaricon}
   - {file: "archive.html", sidebaricon: home}
   - {file: "index.md", sidebaricon: home}
-  - {file: "about.md", sidebaricon: address-card}
   - {file: "cv.md", sidebaricon: file-alt}
   - {file: "publications.md", sidebaricon: book}
   - {file: "projects.md", sidebaricon: project-diagram}
