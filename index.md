@@ -4,7 +4,9 @@ title: "About"
 permalink: /index/
 ---
 
-# Welcome :) 
+# About Me!
+
+Welcome :)
 
 I'm Reihaneh, a PhD student at The University of Manchester. 
 
