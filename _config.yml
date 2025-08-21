@@ -27,7 +27,7 @@ navigation:
 external:                       # accepts {file, title, url, icon, sidebaricon}
   - {title: Mail, icon: envelope, url: "mailto:reihaneh.farzinnia@postgrad.manchester.ac.uk"}
   - {title: Google Scholar, icon: graduation-cap, url: "https://scholar.google.com/citations?user=gkGxtgIAAAAJ&hl=en"}
-  - {title: Bluesky, icon: butterfly, url: "https://bsky.app/profile/reihaneh-farzinnia.bsky.social"}
+  - {title: Bluesky, icon: feather, url: "https://bsky.app/profile/reihaneh-farzinnia.bsky.social"}
   - {title: ORCID, icon: orcid, url: "https://orcid.org/0000-0003-4480-5655"}
   - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/reihaneh-farzinnia"}
   - {title: Github, icon: github, url: "https://github.com/ReihanehFarzinnia"}
