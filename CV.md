@@ -6,4 +6,4 @@ permalink: /cv/
 
 # Curriculum Vitae
 
-You can see my CV [here](assets/CV_2025.pdf). 
+You can see my CV [here](assets/CV.2025.pdf). 
