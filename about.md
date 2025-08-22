@@ -4,7 +4,7 @@ title: "About"
 permalink: /index/
 ---
 # About Me! 
-<img src="assets/images/me.jpg" alt="Reihaneh Farzinnia" style="width:150px; float:right; margin-left:20px; border-radius:50%;">
+<img src="assets/images/me.jpg" style="width:150px; float:right; margin-left:20px; border-radius:50%;">
 
 Welcome :)
 
