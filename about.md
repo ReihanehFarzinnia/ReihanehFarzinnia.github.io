@@ -8,7 +8,7 @@ permalink: /index/
 
 Welcome :)
 
-I'm Reihaneh, a PhD student at The University of Manchester, supervised by [Prof Neil Humphrey](https://research.manchester.ac.uk/en/persons/neil.humphrey) and [Dr Loiuse Black] (https://research.manchester.ac.uk/en/persons/louise.black)
+I'm Reihaneh, a PhD student at The University of Manchester, supervised by [Prof Neil Humphrey](https://research.manchester.ac.uk/en/persons/neil.humphrey) and [Dr Loiuse Black](https://research.manchester.ac.uk/en/persons/louise.black)
 
 I am interested in how we measure mental health difficulties, particularly among young adults. 
 
