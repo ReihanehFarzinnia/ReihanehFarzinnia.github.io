@@ -3,8 +3,8 @@ layout: default
 title: "About"
 permalink: /index/
 ---
-<img src="assets/images/me.jpg" alt="Reihaneh Farzinnia" style="width:150px; float:right; margin-left:20px; border-radius:50%;">
 # About Me! 
+<img src="assets/images/me.jpg" alt="Reihaneh Farzinnia" style="width:150px; float:right; margin-left:20px; border-radius:50%;">
 
 Welcome :)
 
