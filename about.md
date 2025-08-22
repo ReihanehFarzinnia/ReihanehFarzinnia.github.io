@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "About Me"
-permalink: /index/
+permalink: /about/
 ---
 <div style="display:flex; align-items:center; justify-content:space-between;">
 
