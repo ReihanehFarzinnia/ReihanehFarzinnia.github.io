@@ -4,7 +4,7 @@ title: "About Me"
 permalink: /index/
 ---
 # About Me! 
-<img src="assets/images/me.jpg">
+<img src="/assets/images/me.jpg">
 
 Welcome :)
 
