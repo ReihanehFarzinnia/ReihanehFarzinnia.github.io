@@ -4,8 +4,7 @@ title: "About Me"
 permalink: /index/
 ---
 # About Me! 
-<img src="/assets/images/me.jpg">
-
+<img src="/assets/images/me.jpg" alt="Reihaneh Farzinnia" style="width:150px; float:right; margin-left:20px; border-radius:50%;">
 Welcome :)
 
 I'm Reihaneh, a PhD student at The University of Manchester, supervised by [Prof Neil Humphrey](https://research.manchester.ac.uk/en/persons/neil.humphrey) and [Dr Loiuse Black](https://research.manchester.ac.uk/en/persons/louise.black)
