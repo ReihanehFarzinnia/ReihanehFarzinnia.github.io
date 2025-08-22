@@ -11,7 +11,6 @@ permalink: /index/
        style="width:150px; border-radius:50%; margin-left:20px;">
 </div>
 
-<div style="margin-bottom:8px;">
   
 Welcome :)
 
@@ -22,4 +21,4 @@ I am interested in how we measure and model mental health difficulties, particul
 I am doing my PhD as part of the [BeeWell](https://beewellprogramme.org/) team, and I am also working part-time as a research assistant on the [So.Me](https://www.so-me-study.org/) project. You can learn more about these cool projects and my role in them in the [Research Projects](/projects/) section.
 
 You can also explore my [CV](/cv/), publications, and other activities!
-</div>
+
