@@ -22,5 +22,5 @@ I am also interested in contributing to the improvement of psychological science
 
 I am doing my PhD as part of the [BeeWell](https://beewellprogramme.org/) team, and I am also working part-time as a research assistant on the [So.Me](https://www.so-me-study.org/) project. You can learn more about these cool projects and my role in them in the [Research Projects](/projects/) section.
 
-You can also explore my [CV](/cv/), publications, and other activities!
+You can also explore my [CV](/cv/), [publications](/publications/), and other activities!
 
