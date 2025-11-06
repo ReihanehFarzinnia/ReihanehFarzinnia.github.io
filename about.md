@@ -16,7 +16,9 @@ Welcome :)
 
 I'm Reihaneh, a PhD student at The University of Manchester, supervised by [Prof Neil Humphrey](https://research.manchester.ac.uk/en/persons/neil.humphrey) and [Dr Loiuse Black](https://research.manchester.ac.uk/en/persons/louise.black). 
 
-I am interested in how we measure and model mental health difficulties, particularly among young adults. Currently, I am working on the application of Integrative Data Analysis (IDA) and Moderated Nonlinear Factor Analysis (MNLFA; or, as Dan Bauer and Patrick Curran said themselves, the world's worst acronym!) in adolescent mental health research. I will start the second year of my Phd in October 2025, and I will blame Patrick Curran and Greg Hancok if my PhD goes wrong, as I heard about IDA in [Quantitude](https://quantitudepod.org) podcast!
+I am interested in how we measure and model mental health difficulties, particularly among young adults. 
+
+Currently, I am working on the application of Integrative Data Analysis (IDA) and Moderated Nonlinear Factor Analysis (MNLFA; or, as Dan Bauer and Patrick Curran said themselves, the world's worst acronym!) in adolescent mental health research. I am in the second year of my PhD.
 
 I am also interested in contributing to the improvement of psychological science through open science practices and promoting transparency, reproducibility, and collaboration in research.
 
