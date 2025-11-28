@@ -14,4 +14,7 @@ Black, L., Farzinnia, R., Humphrey, N., & Marquez, J. (2024). Variation in globa
 
 
 **Preprints:**
+
+Farzinnia, R., Black, L., & Humphrey, N. (2025). A cross-lagged panel network model to document the relationships between psychosocial risk factor exposure and internalising symptoms in early-to-mid adolescence. osf.io/preprints/psyarxiv/y3w8a_v1
+
 Cameron, L., Farzinnia, R., Cheng, Q., Jenkins, R., & Humphrey, N. (2025). The asspcoation between school staff supoort and wellbeing for students with poor quality social relationships. https://doi.org/10.31234/osf.io/sah9r_v1 
