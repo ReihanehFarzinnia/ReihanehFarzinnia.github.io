@@ -1,7 +1,9 @@
 ---
-title: "About"
 layout: default
+title: "About Me"
 permalink: /
 ---
 
-{% include_relative about.md %}
+# Reihaneh Farzinnia
+
+{% include about.md %}
