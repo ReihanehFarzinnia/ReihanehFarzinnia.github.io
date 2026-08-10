@@ -26,7 +26,7 @@ body
   background: $paper
   color: $ink
   font-family: $serif
-  font-size: clamp(1.08rem, calc(1rem + .24vw), 1.28rem)
+  font-size: unquote("clamp(1.08rem, calc(1rem + .24vw), 1.28rem)")
   line-height: 1.58
   -webkit-font-smoothing: antialiased
   -webkit-text-size-adjust: 100%
@@ -69,11 +69,14 @@ a:focus-visible
   grid-template-columns: minmax(0, 1fr) auto
   align-items: end
   gap: 32px
-  padding: clamp(24px, 5vw, 68px) 0 clamp(22px, 3vw, 38px)
+  padding: unquote("clamp(24px, 5vw, 68px) 0 clamp(22px, 3vw, 38px)")
 
 .site-title
   max-width: 980px
-  font: 500 clamp(3.2rem, 9.1vw, 9.3rem)/.76 $serif
+  font-family: $serif
+  font-size: unquote("clamp(3.2rem, 9.1vw, 9.3rem)")
+  font-weight: 500
+  line-height: .76
   letter-spacing: -.067em
   text-decoration: none
 
@@ -84,7 +87,10 @@ a:focus-visible
   margin: 0 0 .3em
   border-left: 6px solid $accent
   padding-left: 15px
-  font: 500 clamp(.68rem, .7vw, .82rem)/1.35 $mono
+  font-family: $mono
+  font-size: unquote("clamp(.68rem, .7vw, .82rem)")
+  font-weight: 500
+  line-height: 1.35
   letter-spacing: .03em
   text-transform: uppercase
 
@@ -100,7 +106,7 @@ a:focus-visible
 .masthead-nav nav
   display: flex
   align-items: center
-  gap: clamp(16px, 2.6vw, 38px)
+  gap: unquote("clamp(16px, 2.6vw, 38px)")
   margin: 0
 
 .masthead-nav a
@@ -116,21 +122,21 @@ a:focus-visible
 
 .page-shell
   min-height: 55vh
-  padding: clamp(52px, 8vw, 112px) 0 clamp(72px, 11vw, 144px)
+  padding: unquote("clamp(52px, 8vw, 112px) 0 clamp(72px, 11vw, 144px)")
 
 .page-shell > :not(.profile-header):not(.page-heading),
 .page-shell > main > :not(header),
 .page-shell > article > :not(header)
   max-width: 760px
-  margin-left: clamp(0px, 16vw, 220px)
+  margin-left: unquote("clamp(0px, 16vw, 220px)")
 
 .profile-header, .page-heading
   display: grid
   grid-template-columns: minmax(0, 1fr) minmax(190px, 26%)
   align-items: end
-  gap: clamp(32px, 7vw, 100px)
-  margin-bottom: clamp(42px, 7vw, 86px)
-  padding-bottom: clamp(22px, 3vw, 34px)
+  gap: unquote("clamp(32px, 7vw, 100px)")
+  margin-bottom: unquote("clamp(42px, 7vw, 86px)")
+  padding-bottom: unquote("clamp(22px, 3vw, 34px)")
   border-bottom: 1px solid $line
 
 .page-heading
@@ -139,7 +145,10 @@ a:focus-visible
 .profile-header h1, .page-heading h1, main > header h1, article > header h1
   max-width: 900px
   margin: .1em 0 0
-  font: 500 clamp(3.8rem, 9vw, 8.4rem)/.83 $serif
+  font-family: $serif
+  font-size: unquote("clamp(3.8rem, 9vw, 8.4rem)")
+  font-weight: 500
+  line-height: .83
   letter-spacing: -.055em
 
 .profile-header img
@@ -221,7 +230,7 @@ time
 
   .site-title
     display: block
-    font-size: clamp(3.35rem, 18vw, 5.8rem)
+    font-size: unquote("clamp(3.35rem, 18vw, 5.8rem)")
     line-height: .8
 
   .masthead-nav
@@ -255,7 +264,7 @@ time
     gap: 20px
 
   .profile-header h1, .page-heading h1, main > header h1, article > header h1
-    font-size: clamp(3.5rem, 17vw, 5.6rem)
+    font-size: unquote("clamp(3.5rem, 17vw, 5.6rem)")
 
   .profile-header img
     margin-top: 1.3rem
