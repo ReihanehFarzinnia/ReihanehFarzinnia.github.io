@@ -5,7 +5,6 @@ permalink: /publications/
 ---
 
 <div class="page-heading">
-  <p class="kicker">Selected output · 2024—26</p>
   <h1>Publications</h1>
 </div>
 

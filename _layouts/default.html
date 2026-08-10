@@ -6,15 +6,20 @@
 <header class="site-header">
   <div class="masthead-topline">
     <span>Research interests · mental health measurement, psychometrics &amp; open science</span>
-    <span>{{ site.time | date: "%Y" }}</span>
+    {% include menu.html menu=site.navigation %}
   </div>
   <div class="masthead-main">
     <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-    <img class="masthead-portrait" src="{{ '/assets/images/me.jpg' | relative_url }}" alt="Reihaneh Farzinnia">
-  </div>
-  <div class="masthead-nav">
-    {% include menu.html menu=site.navigation %}
-    {% include menu.html menu=site.external %}
+    <div class="masthead-profile">
+      <img class="masthead-portrait" src="{{ '/assets/images/me.jpg' | relative_url }}" alt="Reihaneh Farzinnia">
+      <nav class="masthead-socials" aria-label="Research and social profiles">
+        {% for item in site.external %}
+          {% unless item.title == "Mail" %}
+            <a href="{{ item.url }}">{{ item.title }} <span aria-hidden="true">↗</span></a>
+          {% endunless %}
+        {% endfor %}
+      </nav>
+    </div>
   </div>
 </header>
 
