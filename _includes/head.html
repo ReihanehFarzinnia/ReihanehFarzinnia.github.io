@@ -7,11 +7,11 @@
 <meta name="generator" content="Jekyll v{{ jekyll.version }}">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
 {%- if site.show_minimal -%}
-<link rel="stylesheet" href="{{ "/assets/css/minimal.css" | relative_url }}">
+<link rel="stylesheet" href="{{ "/assets/css/minimal.css" | relative_url }}?v={{ site.github.build_revision }}">
 {%- elsif site.show_frame -%}
-<link rel="stylesheet" href="{{ "/assets/css/frame.css" | relative_url }}">
+<link rel="stylesheet" href="{{ "/assets/css/frame.css" | relative_url }}?v={{ site.github.build_revision }}">
 {%- else -%}
-<link rel="stylesheet" href="{{ "/assets/css/index.css" | relative_url }}">
+<link rel="stylesheet" href="{{ "/assets/css/index.css" | relative_url }}?v={{ site.github.build_revision }}">
 {%- endif -%}
 <link rel="stylesheet" href="{{ "/assets/PT-Sans/index.css" | relative_url }}">
 {%- if site.plugins contains "jekyll-feed" -%}

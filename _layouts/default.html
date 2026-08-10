@@ -15,7 +15,12 @@
       <nav class="masthead-socials" aria-label="Research and social profiles">
         {% for item in site.external %}
           {% unless item.title == "Mail" %}
-            <a href="{{ item.url }}">{{ item.title }} <span aria-hidden="true">↗</span></a>
+            {% assign profile_label = item.title %}
+            {% if item.title == "Google Scholar" %}{% assign profile_label = "Scholar" %}{% endif %}
+            <a href="{{ item.url }}">
+              <svg aria-hidden="true" width="1em" height="1em"><use xlink:href="{{ '/assets/fontawesome/icons.svg' | relative_url }}#{{ item.icon }}"></use></svg>
+              <span>{{ profile_label }}</span>
+            </a>
           {% endunless %}
         {% endfor %}
       </nav>
