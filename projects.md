@@ -5,7 +5,6 @@ permalink: /projects/
 ---
 
 <div class="page-heading">
-  <p class="kicker">Current work · Field notes</p>
   <h1>Projects</h1>
 </div>
 
