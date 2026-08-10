@@ -5,7 +5,7 @@ permalink: /cv/
 ---
 
 <div class="page-heading">
-  <p class="kicker">Curriculum vitae · Updated 2026</p>
+  <p class="kicker">Updated 2026</p>
   <h1>Curriculum Vitae</h1>
 </div>
 

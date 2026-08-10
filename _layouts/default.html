@@ -15,10 +15,19 @@
       <nav class="masthead-socials" aria-label="Research and social profiles">
         {% for item in site.external %}
           {% assign profile_label = item.title %}
+          {% assign profile_icon = "" %}
           {% if item.title == "Google Scholar" %}{% assign profile_label = "Scholar" %}{% endif %}
           {% if item.title == "Mail" %}{% assign profile_label = "Email" %}{% endif %}
+          {% if item.title == "Google Scholar" %}{% assign profile_icon = "googlescholar" %}{% endif %}
+          {% if item.title == "ORCID" %}{% assign profile_icon = "orcid" %}{% endif %}
+          {% if item.title == "Bluesky" %}{% assign profile_icon = "bluesky" %}{% endif %}
+          {% if item.title == "LinkedIn" %}{% assign profile_icon = "linkedin" %}{% endif %}
           <a href="{{ item.url }}">
-            <svg aria-hidden="true" width="1em" height="1em"><use xlink:href="{{ '/assets/fontawesome/icons.svg' | relative_url }}#{{ item.icon }}"></use></svg>
+            {% if profile_icon != "" %}
+              <img class="profile-logo" src="https://cdn.simpleicons.org/{{ profile_icon }}/151510" alt="">
+            {% else %}
+              <svg aria-hidden="true" width="1em" height="1em"><use xlink:href="{{ '/assets/fontawesome/icons.svg' | relative_url }}#{{ item.icon }}"></use></svg>
+            {% endif %}
             <span>{{ profile_label }}</span>
           </a>
         {% endfor %}
