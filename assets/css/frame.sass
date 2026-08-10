@@ -66,7 +66,7 @@ a:focus-visible
 
 .masthead-main
   display: grid
-  grid-template-columns: minmax(0, 1fr) auto
+  grid-template-columns: minmax(0, 1fr) 160px
   align-items: end
   gap: 32px
   padding: unquote("clamp(24px, 5vw, 68px) 0 clamp(22px, 3vw, 38px)")
@@ -83,16 +83,12 @@ a:focus-visible
 .site-title:hover
   color: $ink
 
-.site-deck
-  margin: 0 0 .3em
-  border-left: 6px solid $accent
-  padding-left: 15px
-  font-family: $mono
-  font-size: unquote("clamp(.68rem, .7vw, .82rem)")
-  font-weight: 500
-  line-height: 1.35
-  letter-spacing: .03em
-  text-transform: uppercase
+.masthead-portrait
+  display: block
+  width: 160px
+  aspect-ratio: 4 / 5
+  border: 1px solid $ink
+  object-fit: cover
 
 .masthead-nav
   display: flex
@@ -132,7 +128,7 @@ a:focus-visible
 
 .profile-header, .page-heading
   display: grid
-  grid-template-columns: minmax(0, 1fr) minmax(190px, 26%)
+  grid-template-columns: 1fr
   align-items: end
   gap: unquote("clamp(32px, 7vw, 100px)")
   margin-bottom: unquote("clamp(42px, 7vw, 86px)")
@@ -150,15 +146,6 @@ a:focus-visible
   font-weight: 500
   line-height: .83
   letter-spacing: -.055em
-
-.profile-header img
-  width: 100%
-  aspect-ratio: 4 / 5
-  margin: 0
-  border: 1px solid $ink
-  border-radius: 0
-  object-fit: cover
-  filter: grayscale(100%) contrast(1.04)
 
 .kicker
   margin: 0
@@ -221,17 +208,22 @@ time
   .site-header, .page-shell, .site-footer
     width: calc(100% - 28px)
 
-  .masthead-topline span:last-child, .site-deck
+  .masthead-topline span:last-child
     display: none
 
   .masthead-main
-    display: block
+    grid-template-columns: minmax(0, 1fr) 76px
+    align-items: end
+    gap: 16px
     padding: 30px 0 24px
 
   .site-title
     display: block
     font-size: unquote("clamp(3.35rem, 18vw, 5.8rem)")
     line-height: .8
+
+  .masthead-portrait
+    width: 76px
 
   .masthead-nav
     display: block
@@ -259,15 +251,10 @@ time
     margin-left: 0
 
   .profile-header
-    grid-template-columns: 1fr 100px
-    align-items: start
-    gap: 20px
+    grid-template-columns: 1fr
 
   .profile-header h1, .page-heading h1, main > header h1, article > header h1
     font-size: unquote("clamp(3.5rem, 17vw, 5.6rem)")
-
-  .profile-header img
-    margin-top: 1.3rem
 
   .site-footer
     display: block
@@ -280,10 +267,3 @@ time
   .masthead-nav a
     font-size: .56rem
     letter-spacing: 0
-
-  .profile-header
-    grid-template-columns: 1fr
-
-  .profile-header img
-    width: 120px
-    margin-top: 0

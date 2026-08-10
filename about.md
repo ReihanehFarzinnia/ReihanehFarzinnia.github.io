@@ -8,7 +8,6 @@ permalink: /about/
     <p class="kicker">Researcher profile · 001</p>
     <h1>About Me!</h1>
   </div>
-  <img src="{{ '/assets/images/me.jpg' | relative_url }}" alt="Reihaneh Farzinnia">
 </header>
 
   
