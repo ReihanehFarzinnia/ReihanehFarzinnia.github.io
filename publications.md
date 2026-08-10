@@ -4,7 +4,7 @@ title: "Publications"
 permalink: /publications/
 ---
 
-<div class="page-heading">
+<div class="page-heading publications-heading">
   <h1>Publications</h1>
 </div>
 

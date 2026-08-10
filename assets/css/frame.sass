@@ -93,6 +93,12 @@ a:focus-visible
   padding: unquote("clamp(24px, 5vw, 68px) 0 clamp(22px, 3vw, 38px)")
   border-bottom: 3px solid $accent
 
+.site-identity
+  display: flex
+  align-items: flex-end
+  gap: 18px
+  min-width: 0
+
 .site-title
   max-width: 980px
   font-family: $serif
@@ -104,6 +110,12 @@ a:focus-visible
 
 .site-title:hover
   color: $ink
+
+.site-role
+  max-width: 190px
+  margin: 0 0 .35em
+  color: $accent
+  font: 500 .67rem/1.35 $mono
 
 .masthead-profile
   display: grid
@@ -167,7 +179,7 @@ a:focus-visible
 
 .profile-header::after, .page-heading::after
   content: ""
-  width: 120px
+  width: 240px
   margin-top: 22px
   border-top: 1px dashed $accent
 
@@ -194,6 +206,10 @@ a:focus-visible
 .page-shell p:first-of-type:not(.kicker)
   font-size: 1.25em
   line-height: 1.42
+
+.publications-heading + p
+  font-size: inherit!important
+  line-height: inherit!important
 
 .page-shell strong
   display: block
@@ -266,6 +282,14 @@ time
     display: block
     font-size: unquote("clamp(2.2rem, 9.5vw, 3.5rem)")
     line-height: .8
+
+  .site-identity
+    display: block
+
+  .site-role
+    max-width: 150px
+    margin-top: 10px
+    font-size: .55rem
 
   .masthead-profile
     grid-template-columns: 68px minmax(0, 1fr)

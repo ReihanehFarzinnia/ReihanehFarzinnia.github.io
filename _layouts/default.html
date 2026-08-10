@@ -9,7 +9,10 @@
     {% include menu.html menu=site.navigation %}
   </div>
   <div class="masthead-main">
-    <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <div class="site-identity">
+      <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+      <p class="site-role">(PhD student at The University of Manchester)</p>
+    </div>
     <div class="masthead-profile">
       <img class="masthead-portrait" src="{{ '/assets/images/me.jpg' | relative_url }}" alt="Reihaneh Farzinnia">
       <nav class="masthead-socials" aria-label="Research and social profiles">
@@ -21,7 +24,6 @@
           {% if item.title == "Google Scholar" %}{% assign profile_icon = "googlescholar" %}{% endif %}
           {% if item.title == "ORCID" %}{% assign profile_icon = "orcid" %}{% endif %}
           {% if item.title == "Bluesky" %}{% assign profile_icon = "bluesky" %}{% endif %}
-          {% if item.title == "LinkedIn" %}{% assign profile_icon = "linkedin" %}{% endif %}
           <a href="{{ item.url }}">
             {% if profile_icon != "" %}
               <img class="profile-logo" src="https://cdn.simpleicons.org/{{ profile_icon }}/151510" alt="" width="15" height="15">
