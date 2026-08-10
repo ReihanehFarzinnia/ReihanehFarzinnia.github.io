@@ -64,6 +64,9 @@ a:focus-visible
   letter-spacing: .07em
   text-transform: uppercase
 
+.masthead-topline > span
+  color: $accent
+
 .masthead-topline nav
   display: flex
   gap: 12px
@@ -77,7 +80,7 @@ a:focus-visible
 .masthead-topline a + a::before
   content: "|"
   margin-right: 12px
-  color: $muted
+  color: $accent
 
 .masthead-main
   display: grid
@@ -85,12 +88,12 @@ a:focus-visible
   align-items: end
   gap: 32px
   padding: unquote("clamp(24px, 5vw, 68px) 0 clamp(22px, 3vw, 38px)")
-  border-bottom: 3px solid $ink
+  border-bottom: 3px solid $accent
 
 .site-title
   max-width: 980px
   font-family: $serif
-  font-size: unquote("clamp(2.8rem, 7vw, 7rem)")
+  font-size: unquote("clamp(2.5rem, 6vw, 6rem)")
   font-weight: 500
   line-height: .76
   letter-spacing: -.067em
@@ -163,7 +166,7 @@ a:focus-visible
   max-width: 900px
   margin: .1em 0 0
   font-family: $serif
-  font-size: unquote("clamp(2.8rem, 6vw, 5.6rem)")
+  font-size: unquote("clamp(2.4rem, 5vw, 4.8rem)")
   font-weight: 500
   line-height: .83
   letter-spacing: -.055em
@@ -252,7 +255,7 @@ time
 
   .site-title
     display: block
-    font-size: unquote("clamp(2.5rem, 12vw, 4.4rem)")
+    font-size: unquote("clamp(2.3rem, 10.5vw, 3.9rem)")
     line-height: .8
 
   .masthead-profile
@@ -281,7 +284,7 @@ time
     grid-template-columns: 1fr
 
   .profile-header h1, .page-heading h1, main > header h1, article > header h1
-    font-size: unquote("clamp(2.7rem, 13vw, 4.3rem)")
+    font-size: unquote("clamp(2.4rem, 11vw, 3.8rem)")
 
   .site-footer
     display: block

@@ -14,14 +14,13 @@
       <img class="masthead-portrait" src="{{ '/assets/images/me.jpg' | relative_url }}" alt="Reihaneh Farzinnia">
       <nav class="masthead-socials" aria-label="Research and social profiles">
         {% for item in site.external %}
-          {% unless item.title == "Mail" %}
-            {% assign profile_label = item.title %}
-            {% if item.title == "Google Scholar" %}{% assign profile_label = "Scholar" %}{% endif %}
-            <a href="{{ item.url }}">
-              <svg aria-hidden="true" width="1em" height="1em"><use xlink:href="{{ '/assets/fontawesome/icons.svg' | relative_url }}#{{ item.icon }}"></use></svg>
-              <span>{{ profile_label }}</span>
-            </a>
-          {% endunless %}
+          {% assign profile_label = item.title %}
+          {% if item.title == "Google Scholar" %}{% assign profile_label = "Scholar" %}{% endif %}
+          {% if item.title == "Mail" %}{% assign profile_label = "Email" %}{% endif %}
+          <a href="{{ item.url }}">
+            <svg aria-hidden="true" width="1em" height="1em"><use xlink:href="{{ '/assets/fontawesome/icons.svg' | relative_url }}#{{ item.icon }}"></use></svg>
+            <span>{{ profile_label }}</span>
+          </a>
         {% endfor %}
       </nav>
     </div>
