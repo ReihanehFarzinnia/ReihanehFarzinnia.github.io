@@ -1,38 +1,279 @@
 ---
 ---
 
-@import utils, basic, layout, classes, rouge_github
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap')
+
+$paper: #f1eee4
+$ink: #151510
+$accent: #e74525
+$muted: #68665f
+$line: rgba(21, 21, 16, .72)
+$serif: "Newsreader", Georgia, serif
+$sans: "PT Sans", Arial, sans-serif
+$mono: "DM Mono", ui-monospace, monospace
+
+*
+  box-sizing: border-box
+
+html
+  background: $paper
+  color: $ink
+  scroll-behavior: smooth
 
 body
-  background: light(93)
-  background: light(93, 16)
-  padding: 0 calc(38% - 22rem)
+  margin: 0
+  min-height: 100vh
+  background: $paper
+  color: $ink
+  font-family: $serif
+  font-size: clamp(1.08rem, 1rem + .24vw, 1.28rem)
+  line-height: 1.58
+  -webkit-font-smoothing: antialiased
+  -webkit-text-size-adjust: 100%
 
-body > *
-  background: light(100)
-  background: light(100, 17)
-  color: light(0, 100)
-  padding: 1.75em calc(22% - 6rem)
-  padding: clamp(1.5em, 4vw, 1.75em) max(1.5em, 22% - 6rem)
-  box-shadow: 0 -1px gray(10) inset, 0 0 1em light-dark(gray(10), transparent), 0 0 0 1px light-dark(transparent, light(26))
+a
+  color: inherit
+  text-decoration-color: $accent
+  text-decoration-thickness: 1px
+  text-underline-offset: .16em
+  transition: color .18s ease, background-color .18s ease
 
-body > header, body > footer
-  background: light(20)
-  background: light(20, 17)
-  color: light(100)
+a:hover
+  color: $accent
 
-{% if site.show_frame contains "." %}
+a:focus-visible
+  outline: 2px solid $accent
+  outline-offset: 4px
 
-@media (min-width: 60em)
-  body
-    background: 0 0/cover url({{ site.show_frame | relative_url }})
-    background-attachment: fixed
-    color-scheme: only light
-    margin: 1em 0
-    min-height: calc(100vh - 2em)
-    > :first-child
-      border-radius: 4px 4px 0 0
-    > :last-child
-      border-radius: 0 0 4px 4px
+.site-header, .page-shell, .site-footer
+  width: min(100% - 40px, 1320px)
+  margin-inline: auto
 
-{% endif %}
+.site-header
+  padding-top: 18px
+
+.masthead-topline
+  display: flex
+  justify-content: space-between
+  gap: 20px
+  border-top: 1px solid $line
+  border-bottom: 1px solid $line
+  padding: 8px 0 7px
+  font: 500 .64rem/1.25 $mono
+  letter-spacing: .07em
+  text-transform: uppercase
+
+.masthead-main
+  display: grid
+  grid-template-columns: minmax(0, 1fr) auto
+  align-items: end
+  gap: 32px
+  padding: clamp(24px, 5vw, 68px) 0 clamp(22px, 3vw, 38px)
+
+.site-title
+  max-width: 980px
+  font: 500 clamp(3.2rem, 9.1vw, 9.3rem)/.76 $serif
+  letter-spacing: -.067em
+  text-decoration: none
+
+.site-title:hover
+  color: $ink
+
+.site-deck
+  margin: 0 0 .3em
+  border-left: 6px solid $accent
+  padding-left: 15px
+  font: 500 clamp(.68rem, .7vw, .82rem)/1.35 $mono
+  letter-spacing: .03em
+  text-transform: uppercase
+
+.masthead-nav
+  display: flex
+  justify-content: space-between
+  align-items: center
+  gap: 28px
+  border-top: 3px solid $ink
+  border-bottom: 1px solid $line
+  padding: 12px 0 11px
+
+.masthead-nav nav
+  display: flex
+  align-items: center
+  gap: clamp(16px, 2.6vw, 38px)
+  margin: 0
+
+.masthead-nav a
+  font: 500 .7rem/1 $mono
+  letter-spacing: .055em
+  text-decoration: none
+  text-transform: uppercase
+
+.masthead-nav svg
+  display: block
+  width: 1rem
+  height: 1rem
+
+.page-shell
+  min-height: 55vh
+  padding: clamp(52px, 8vw, 112px) 0 clamp(72px, 11vw, 144px)
+
+.page-shell > :not(.profile-header):not(.page-heading),
+.page-shell > main > :not(header),
+.page-shell > article > :not(header)
+  max-width: 760px
+  margin-left: clamp(0px, 16vw, 220px)
+
+.profile-header, .page-heading
+  display: grid
+  grid-template-columns: minmax(0, 1fr) minmax(190px, 26%)
+  align-items: end
+  gap: clamp(32px, 7vw, 100px)
+  margin-bottom: clamp(42px, 7vw, 86px)
+  padding-bottom: clamp(22px, 3vw, 34px)
+  border-bottom: 1px solid $line
+
+.page-heading
+  grid-template-columns: 1fr
+
+.profile-header h1, .page-heading h1, main > header h1, article > header h1
+  max-width: 900px
+  margin: .1em 0 0
+  font: 500 clamp(3.8rem, 9vw, 8.4rem)/.83 $serif
+  letter-spacing: -.055em
+
+.profile-header img
+  width: 100%
+  aspect-ratio: 4 / 5
+  margin: 0
+  border: 1px solid $ink
+  border-radius: 0
+  object-fit: cover
+  filter: grayscale(100%) contrast(1.04)
+
+.kicker
+  margin: 0
+  color: $accent
+  font: 500 .66rem/1.4 $mono
+  letter-spacing: .08em
+  text-transform: uppercase
+
+.page-shell p
+  margin-top: 0
+  margin-bottom: 1.35em
+
+.page-shell p:first-of-type:not(.kicker)
+  font-size: 1.25em
+  line-height: 1.42
+
+.page-shell strong
+  display: block
+  margin-top: 2.8rem
+  padding-top: .65rem
+  border-top: 1px solid $line
+  color: $accent
+  font: 500 .7rem/1.4 $mono
+  letter-spacing: .07em
+  text-transform: uppercase
+
+.page-shell hr
+  margin: 3rem 0
+  border: 0
+  border-top: 1px solid $line
+
+.page-shell img
+  max-width: 100%
+
+.site-footer
+  display: flex
+  justify-content: space-between
+  gap: 30px
+  border-top: 3px solid $ink
+  padding: 18px 0 30px
+  font: 400 .67rem/1.5 $mono
+  letter-spacing: .035em
+  text-transform: uppercase
+
+.site-footer p
+  margin: 0
+
+.site-footer span
+  color: $accent
+
+.site-footer a
+  white-space: nowrap
+  text-decoration: none
+
+time
+  font-family: $mono
+  font-size: .7em
+
+@media (max-width: 760px)
+  .site-header, .page-shell, .site-footer
+    width: min(100% - 28px, 1320px)
+
+  .masthead-topline span:last-child, .site-deck
+    display: none
+
+  .masthead-main
+    display: block
+    padding: 30px 0 24px
+
+  .site-title
+    display: block
+    font-size: clamp(3.35rem, 18vw, 5.8rem)
+    line-height: .8
+
+  .masthead-nav
+    display: block
+    overflow: hidden
+    padding: 0
+
+  .masthead-nav nav:first-child
+    width: 100%
+    justify-content: space-between
+    gap: 8px
+    padding: 13px 0 12px
+
+  .masthead-nav nav:last-child
+    display: none
+
+  .masthead-nav a
+    font-size: .61rem
+
+  .page-shell
+    padding-top: 50px
+
+  .page-shell > :not(.profile-header):not(.page-heading),
+  .page-shell > main > :not(header),
+  .page-shell > article > :not(header)
+    margin-left: 0
+
+  .profile-header
+    grid-template-columns: 1fr 100px
+    align-items: start
+    gap: 20px
+
+  .profile-header h1, .page-heading h1, main > header h1, article > header h1
+    font-size: clamp(3.5rem, 17vw, 5.6rem)
+
+  .profile-header img
+    margin-top: 1.3rem
+
+  .site-footer
+    display: block
+
+  .site-footer a
+    display: inline-block
+    margin-top: 12px
+
+@media (max-width: 390px)
+  .masthead-nav a
+    font-size: .56rem
+    letter-spacing: 0
+
+  .profile-header
+    grid-template-columns: 1fr
+
+  .profile-header img
+    width: 120px
+    margin-top: 0

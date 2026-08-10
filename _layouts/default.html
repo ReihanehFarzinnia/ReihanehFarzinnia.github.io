@@ -3,21 +3,28 @@
 
 {% include head.html %}
 
-<header class="hover smooth">
-  {% unless site.show_minimal and site.navigation and site.external %}
-    <h1 {% if site.navigation and site.external %}class="full"{% endif %}><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
-  {% endunless %}
-  {% include menu.html menu=site.navigation %}
-  {% include menu.html menu=site.external %}
+<header class="site-header">
+  <div class="masthead-topline">
+    <span>Research notes on measurement, methods &amp; mental health</span>
+    <span>Manchester, UK · {{ site.time | date: "%Y" }}</span>
+  </div>
+  <div class="masthead-main">
+    <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <p class="site-deck">Psychological science<br>in progress</p>
+  </div>
+  <div class="masthead-nav">
+    {% include menu.html menu=site.navigation %}
+    {% include menu.html menu=site.external %}
+  </div>
 </header>
 
-{{ content }}
+<div class="page-shell">
+  {{ content }}
+</div>
 
-{%- if site.footer -%}
-<footer class="hover">
-  <div>{{ site.description }}</div>
-  {% include menu.html menu=site.footer %}
+<footer class="site-footer">
+  <p><span>Reihaneh Farzinnia</span> · {{ site.description }}</p>
+  <a href="mailto:reihaneh.farzinnia@postgrad.manchester.ac.uk">Get in touch ↗</a>
 </footer>
-{%- endif -%}
 
 </html>

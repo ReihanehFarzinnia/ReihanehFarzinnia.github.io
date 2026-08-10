@@ -3,13 +3,13 @@ layout: default
 title: "About Me"
 permalink: /
 ---
-<div style="display:flex; align-items:center; justify-content:space-between;">
-
-  <h1>About Me!</h1>
-
-  <img src="/assets/images/me.jpg" alt="Reihaneh Farzinnia" 
-       style="width:150px; border-radius:50%; margin-left:20px;">
-</div>
+<header class="profile-header">
+  <div>
+    <p class="kicker">Researcher profile · 001</p>
+    <h1>About Me!</h1>
+  </div>
+  <img src="{{ '/assets/images/me.jpg' | relative_url }}" alt="Reihaneh Farzinnia">
+</header>
 
   
 Welcome :)
