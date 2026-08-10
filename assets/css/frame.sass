@@ -46,7 +46,8 @@ a:focus-visible
   outline-offset: 4px
 
 .site-header, .page-shell, .site-footer
-  width: min(100% - 40px, 1320px)
+  width: calc(100% - 40px)
+  max-width: 1320px
   margin-inline: auto
 
 .site-header
@@ -209,7 +210,7 @@ time
 
 @media (max-width: 760px)
   .site-header, .page-shell, .site-footer
-    width: min(100% - 28px, 1320px)
+    width: calc(100% - 28px)
 
   .masthead-topline span:last-child, .site-deck
     display: none
