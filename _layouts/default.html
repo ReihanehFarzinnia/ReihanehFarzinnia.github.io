@@ -24,7 +24,7 @@
           {% if item.title == "LinkedIn" %}{% assign profile_icon = "linkedin" %}{% endif %}
           <a href="{{ item.url }}">
             {% if profile_icon != "" %}
-              <img class="profile-logo" src="https://cdn.simpleicons.org/{{ profile_icon }}/151510" alt="">
+              <img class="profile-logo" src="https://cdn.simpleicons.org/{{ profile_icon }}/151510" alt="" width="15" height="15">
             {% else %}
               <svg aria-hidden="true" width="1em" height="1em"><use xlink:href="{{ '/assets/fontawesome/icons.svg' | relative_url }}#{{ item.icon }}"></use></svg>
             {% endif %}

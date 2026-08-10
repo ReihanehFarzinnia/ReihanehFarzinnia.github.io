@@ -139,9 +139,13 @@ a:focus-visible
   text-transform: uppercase
 
 .masthead-socials svg, .masthead-socials .profile-logo
-  width: 1.15em
-  height: 1.15em
-  flex: 0 0 auto
+  display: block
+  width: 15px!important
+  height: 15px!important
+  max-width: 15px
+  max-height: 15px
+  flex: 0 0 15px
+  object-fit: contain
 
 .page-shell
   min-height: 55vh
@@ -163,7 +167,7 @@ a:focus-visible
 
 .profile-header::after, .page-heading::after
   content: ""
-  width: 72px
+  width: 120px
   margin-top: 22px
   border-top: 1px dashed $accent
 
