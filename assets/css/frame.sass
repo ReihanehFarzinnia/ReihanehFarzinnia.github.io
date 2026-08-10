@@ -64,8 +64,11 @@ a:focus-visible
   letter-spacing: .07em
   text-transform: uppercase
 
-.masthead-topline > span
+.research-label, .research-punctuation
   color: $accent
+
+.research-copy
+  color: $ink
 
 .masthead-topline nav
   display: flex
@@ -121,7 +124,7 @@ a:focus-visible
   justify-content: flex-end
   align-self: stretch
   margin: 0
-  border-left: 1px solid $line
+  border-left: 1px solid $accent
   padding-left: 12px
 
 .masthead-socials a
@@ -151,20 +154,22 @@ a:focus-visible
   margin-left: unquote("clamp(0px, 16vw, 220px)")
 
 .profile-header, .page-heading
-  display: grid
-  grid-template-columns: 1fr
-  align-items: end
-  gap: unquote("clamp(32px, 7vw, 100px)")
+  display: flex
+  flex-direction: column
+  align-items: center
   margin-bottom: unquote("clamp(42px, 7vw, 86px)")
   padding-bottom: unquote("clamp(22px, 3vw, 34px)")
-  border-bottom: 1px solid $line
+  text-align: center
 
-.page-heading
-  grid-template-columns: 1fr
+.profile-header::after, .page-heading::after
+  content: ""
+  width: 72px
+  margin-top: 22px
+  border-top: 1px dashed $accent
 
 .profile-header h1, .page-heading h1, main > header h1, article > header h1
   max-width: 900px
-  margin: .1em 0 0
+  margin: .1em auto 0
   font-family: $serif
   font-size: unquote("clamp(2.4rem, 5vw, 4.8rem)")
   font-weight: 500
@@ -279,9 +284,6 @@ time
   .page-shell > main > :not(header),
   .page-shell > article > :not(header)
     margin-left: 0
-
-  .profile-header
-    grid-template-columns: 1fr
 
   .profile-header h1, .page-heading h1, main > header h1, article > header h1
     font-size: unquote("clamp(2.4rem, 11vw, 3.8rem)")
