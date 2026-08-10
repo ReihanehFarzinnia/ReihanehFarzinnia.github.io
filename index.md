@@ -5,7 +5,6 @@ permalink: /
 ---
 <header class="profile-header">
   <div>
-    <p class="kicker">Researcher profile · 001</p>
     <h1>About Me!</h1>
   </div>
 </header>
