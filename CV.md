@@ -9,4 +9,4 @@ permalink: /cv/
   <h1>Curriculum Vitae</h1>
 </div>
 
-You can see my CV [here]({{ '/assets/CV.2026.pdf' | relative_url }}).
+<p class="cv-link">You can see my CV <a href="{{ '/assets/CV.2026.pdf' | relative_url }}">here</a>.</p>
