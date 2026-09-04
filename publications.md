@@ -18,6 +18,4 @@ Farzinnia, R., Black, L., & Humphrey, N. (2026). A cross-lagged panel network mo
 
 Cameron, L., Farzinnia, R., Cheng, Q., Jenkins, R., & Humphrey, N. (2025). The association between school staff support and wellbeing for students with poor quality social relationships. [https://doi.org/10.31234/osf.io/sah9r_v1](https://doi.org/10.31234/osf.io/sah9r_v1)
 
-**In Preparation:**
-
-Farzinnia, R., Black, L., Santos, J., & Humphrey, N. A workflow for detecting and estimating multiple sources of differential item functioning and their effects on scale scores.
+Farzinnia, R., Black, L., Santos, J. G. A. d., & Humphrey, N. (2026, September 3). A moderated nonlinear factor analysis workflow for detecting and estimating multiple sources of differential item functioning and evaluating their impact on scale scores. Retrieved from [osf.io/preprints/psyarxiv/wdc2h_v1](https://osf.io/preprints/psyarxiv/wdc2h_v1)
