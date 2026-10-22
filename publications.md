@@ -18,6 +18,8 @@ Farzinnia, R., Black, L., Santos, J. G. A. d., & Humphrey, N. (2026). A moderate
 
 Farzinnia, R., Black, L., & Humphrey, N. (2026). A cross-lagged panel network model to document the relationships between psychosocial risk factor exposure and internalising symptoms in early-to-mid adolescence. [osf.io/preprints/psyarxiv/y3w8a_v2](https://osf.io/preprints/psyarxiv/y3w8a_v2)
 
-Cameron, L., Farzinnia, R., Cheng, Q., Jenkins, R., & Humphrey, N. (2025). The association between school staff support and wellbeing for students with poor quality social relationships. [https://doi.org/10.31234/osf.io/sah9r_v1](https://doi.org/10.31234/osf.io/sah9r_v1)
-
 Hickman Dunne, J., Black, L., Davies, J., Jones, F., Anderton, M., Nanda, P., Beissel, F., Bruke, L., Farzinnia, R., & Panayiotou, M. (2026). Developing an adolescent self-report measure of social media experience: Insights from cognitive interviews. [osf.io/preprints/psyarxiv/uzrc9_v1](https://osf.io/preprints/psyarxiv/uzrc9_v1)
+
+Hickman Dunne, J., Burke, L., Davies, J., Black, L., Jones, F., Anderton, M., … Panayiotou, M. (2026). Planning on doing cognitive interviews? Reflections and recommendations from the #So.Me study. [osf.io/preprints/psyarxiv/8xv2c_v1](https://osf.io/preprints/psyarxiv/8xv2c_v1)
+
+Cameron, L., Farzinnia, R., Cheng, Q., Jenkins, R., & Humphrey, N. (2025). The association between school staff support and wellbeing for students with poor quality social relationships. [https://doi.org/10.31234/osf.io/sah9r_v1](https://doi.org/10.31234/osf.io/sah9r_v1)
