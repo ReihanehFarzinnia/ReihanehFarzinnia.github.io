@@ -1,6 +1,8 @@
 title: "Reihaneh Farzinnia"
 author: "Reihaneh Farzinnia"
-description: "PhD student at The University of Manchester"
+description: "Reihaneh Farzinnia is a PhD researcher at the University of Manchester studying adolescent mental health, psychometrics, mental health measurement, and open science."
+url: "https://reihanehfarzinnia.github.io"
+baseurl: ""
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"

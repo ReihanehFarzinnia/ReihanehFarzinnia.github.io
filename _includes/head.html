@@ -1,8 +1,15 @@
-<title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
+{% if page.url == "/" %}
+<title>Reihaneh Farzinnia | PhD Researcher | University of Manchester</title>
+{% elsif page.title %}
+<title>{{ page.title | escape }} | {{ site.title | escape }}</title>
+{% else %}
+<title>{{ site.title | escape }}</title>
+{% endif %}
 <meta charset="{{ site.encoding }}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#f1eee4">
-<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | strip_newlines | escape }}">
+<meta name="description" content="{{ page.description | default: site.description | strip_html | strip_newlines | escape }}">
+<meta name="robots" content="index, follow">
 <meta name="author" content="{{ page.author | default: site.author | escape }}">
 <meta name="generator" content="Jekyll v{{ jekyll.version }}">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
