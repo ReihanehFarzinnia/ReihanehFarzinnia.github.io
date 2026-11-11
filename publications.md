@@ -8,7 +8,7 @@ permalink: /publications/
   <h1>Publications</h1>
 </div>
 
-Jefferson, R., Farzinnia, R., Verity, L., Jones, F., Fayette, R., Qualter, P., Woods, K., & Bond, C. (2026). Evaluation of context-specific early identification of autism models involving multiple stakeholders: Examples from three areas of England. _Journal of Autism and Developmental Disorders_. [https://doi.org/10.1007/s10803-026-07589-6](https://doi.org/10.1007/s10803-026-07589-6)
+Jefferson, R., Farzinnia, R., Verity, L., Jones, F., Fayette, R., Qualter, P., Woods, K., & Bond, C. (2026). Evaluation of context-specific early identification of autism models involving multiple stakeholders: Examples from three areas of England. _Journal of Autism and Developmental Disorders_, 1-12. [https://doi.org/10.1007/s10803-026-07589-6](https://doi.org/10.1007/s10803-026-07589-6)
 
 Marquez, J., Panayiotou, M., Farzinnia, R., Cheng, Q., & Humphrey, N. (2025). Correction: Longitudinal relationships across sleep, physical activity, and mental wellbeing in early-to-mid-adolescence: a developmental cascades investigation. Quality of life research: _an international journal of quality of life aspects of treatment, care and rehabilitation_, _34_(5), 1251. [https://doi.org/10.1007/s11136-025-03921-2](https://doi.org/10.1007/s11136-025-03921-2)
 
