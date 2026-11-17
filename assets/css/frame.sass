@@ -118,9 +118,18 @@ a:focus-visible
   padding-top: 38px
 
 .sidebar-profiles a
+  display: flex
+  align-items: center
+  gap: 9px
   margin-top: 9px
   font-size: .95rem
   font-weight: 700
+
+.sidebar-profiles svg
+  width: 1em
+  height: 1em
+  flex: 0 0 1em
+  fill: currentColor
 
 .site-main
   min-width: 0
@@ -134,7 +143,7 @@ a:focus-visible
 
 .profile-page
   display: grid
-  grid-template-columns: minmax(0, 1fr) unquote("clamp(210px, 22vw, 330px)")
+  grid-template-columns: minmax(0, 1fr) unquote("clamp(180px, 18vw, 270px)")
   align-items: start
   gap: unquote("clamp(38px, 5vw, 86px)")
   width: unquote("min(100%, 1280px)")
@@ -168,6 +177,9 @@ a:focus-visible
 
 .page-content p:first-of-type:not(.page-eyebrow):not(.kicker)
   font-weight: 700
+
+.page-publications > p
+  font-weight: 400
 
 .page-content strong
   display: block
@@ -272,7 +284,7 @@ a:focus-visible
     padding: 44px 24px 72px
 
   .profile-page
-    grid-template-columns: minmax(0, 1fr) minmax(160px, 31vw)
+    grid-template-columns: minmax(0, 1fr) minmax(150px, 27vw)
     gap: 32px
 
   .page-content
@@ -307,7 +319,7 @@ a:focus-visible
     gap: 30px
 
   .profile-photo
-    width: unquote("min(74vw, 330px)")
+    width: unquote("min(64vw, 280px)")
 
   .page-eyebrow
     margin-bottom: 24px!important

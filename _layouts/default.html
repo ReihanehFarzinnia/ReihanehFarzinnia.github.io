@@ -25,7 +25,10 @@
           {% assign profile_label = item.title %}
           {% if item.title == "Google Scholar" %}{% assign profile_label = "Scholar" %}{% endif %}
           {% if item.title == "Mail" %}{% assign profile_label = "Email" %}{% endif %}
-          <a href="{{ item.url }}">{{ profile_label }}</a>
+          <a href="{{ item.url }}">
+            <svg aria-hidden="true" width="1em" height="1em"><use xlink:href="{{ '/assets/fontawesome/icons.svg' | relative_url }}#{{ item.icon }}"></use></svg>
+            <span>{{ profile_label }}</span>
+          </a>
         {% endfor %}
       </nav>
     </aside>
