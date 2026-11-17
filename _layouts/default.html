@@ -3,48 +3,50 @@
 
 {% include head.html %}
 
-<header class="site-header">
-  <div class="masthead-topline">
-    <span class="research-line"><span class="research-label">Research interests</span><span class="research-punctuation"> · </span><span class="research-copy">mental health measurement<span class="research-punctuation">,</span> psychometrics <span class="research-punctuation">&amp;</span> open science</span></span>
-    {% include menu.html menu=site.navigation %}
-  </div>
-  <div class="masthead-main">
-    <div class="site-identity">
-      <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-      <p class="site-role">(PhD student at The University of Manchester)</p>
-    </div>
-    <div class="masthead-profile">
-      <img class="masthead-portrait" src="{{ '/assets/images/me.jpg' | relative_url }}" alt="Reihaneh Farzinnia">
-      <nav class="masthead-socials" aria-label="Research and social profiles">
+<body>
+  <div class="site-frame">
+    <aside class="site-sidebar">
+      <div class="sidebar-heading">
+        <a class="sidebar-title" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+        <p class="sidebar-role">PhD researcher at The University of Manchester</p>
+      </div>
+
+      <div class="sidebar-research">
+        <span>Research interests</span>
+        <p>Mental health measurement, psychometrics &amp; open science</p>
+      </div>
+
+      <div class="sidebar-navigation">
+        {% include menu.html menu=site.navigation %}
+      </div>
+
+      <nav class="sidebar-profiles" aria-label="Research and social profiles">
         {% for item in site.external %}
           {% assign profile_label = item.title %}
-          {% assign profile_icon = "" %}
           {% if item.title == "Google Scholar" %}{% assign profile_label = "Scholar" %}{% endif %}
           {% if item.title == "Mail" %}{% assign profile_label = "Email" %}{% endif %}
-          {% if item.title == "Google Scholar" %}{% assign profile_icon = "googlescholar" %}{% endif %}
-          {% if item.title == "ORCID" %}{% assign profile_icon = "orcid" %}{% endif %}
-          {% if item.title == "Bluesky" %}{% assign profile_icon = "bluesky" %}{% endif %}
-          <a href="{{ item.url }}">
-            {% if profile_icon != "" %}
-              <img class="profile-logo" src="https://cdn.simpleicons.org/{{ profile_icon }}/151510" alt="" width="15" height="15">
-            {% else %}
-              <svg aria-hidden="true" width="1em" height="1em"><use xlink:href="{{ '/assets/fontawesome/icons.svg' | relative_url }}#{{ item.icon }}"></use></svg>
-            {% endif %}
-            <span>{{ profile_label }}</span>
-          </a>
+          <a href="{{ item.url }}">{{ profile_label }}</a>
         {% endfor %}
       </nav>
-    </div>
+    </aside>
+
+    <main class="site-main">
+      {% if page.url == "/" or page.url == "/about/" %}
+        <div class="profile-page">
+          <article class="page-content page-{{ page.title | slugify }}">
+            {{ content }}
+          </article>
+          <figure class="profile-photo">
+            <img src="{{ '/assets/images/me.jpg' | relative_url }}" alt="Reihaneh Farzinnia">
+          </figure>
+        </div>
+      {% else %}
+        <article class="page-content page-{{ page.title | slugify }}">
+          {{ content }}
+        </article>
+      {% endif %}
+    </main>
   </div>
-</header>
-
-<div class="page-shell page-{{ page.title | slugify }}">
-  {{ content }}
-</div>
-
-<footer class="site-footer">
-  <p><span>Reihaneh Farzinnia</span> · {{ site.description }}</p>
-  <a href="mailto:reihaneh.farzinnia@postgrad.manchester.ac.uk">Get in touch ↗</a>
-</footer>
+</body>
 
 </html>

@@ -3,14 +3,7 @@ layout: default
 title: "About Me"
 permalink: /about/
 ---
-<header class="profile-header">
-  <div>
-    <h1>About Me!</h1>
-  </div>
-</header>
-
-  
-Welcome :)
+<p class="page-eyebrow">About me</p>
 
 I'm Reihaneh, a PhD student at The University of Manchester, supervised by [Prof Neil Humphrey](https://research.manchester.ac.uk/en/persons/neil.humphrey) and [Dr Louise Black](https://www.mmu.ac.uk/about-us/faculties/health-and-education/schools/psychology/staff/profile/louise-black#t-tabs_staff_profile-0).
 

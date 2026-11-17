@@ -1,16 +1,12 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap')
-
 $paper: #f1eee4
 $ink: #151510
 $accent: #e74525
 $muted: #68665f
-$line: rgba(21, 21, 16, .72)
-$serif: "Newsreader", Georgia, serif
-$sans: "PT Sans", Arial, sans-serif
-$mono: "DM Mono", ui-monospace, monospace
+$rule: rgba(21, 21, 16, .58)
+$sans: Helvetica, Arial, sans-serif
 
 *
   box-sizing: border-box
@@ -25,18 +21,19 @@ body
   min-height: 100vh
   background: $paper
   color: $ink
-  font-family: $serif
-  font-size: unquote("clamp(1.08rem, calc(1rem + .24vw), 1.28rem)")
-  line-height: 1.58
+  font-family: $sans
+  font-size: 18px
+  line-height: 1.25
   -webkit-font-smoothing: antialiased
   -webkit-text-size-adjust: 100%
 
 a
   color: inherit
+  text-decoration-line: underline
   text-decoration-color: $accent
-  text-decoration-thickness: 1px
-  text-underline-offset: .16em
-  transition: color .18s ease, background-color .18s ease
+  text-decoration-style: dotted
+  text-decoration-thickness: 2px
+  text-underline-offset: .13em
 
 a:hover
   color: $accent
@@ -45,322 +42,281 @@ a:focus-visible
   outline: 2px solid $accent
   outline-offset: 4px
 
-.site-header, .page-shell, .site-footer
-  width: calc(100% - 40px)
-  max-width: 1320px
-  margin-inline: auto
+.site-frame
+  display: grid
+  grid-template-columns: unquote("clamp(280px, 24vw, 560px) minmax(0, 1fr)")
+  min-height: 100vh
 
-.site-header
-  padding-top: 18px
-
-.masthead-topline
+.site-sidebar
+  position: sticky
+  top: 0
   display: flex
-  justify-content: space-between
-  gap: 20px
-  border-top: 1px solid $line
-  border-bottom: 1px solid $line
-  padding: 8px 0 7px
-  font: 500 .72rem/1.25 $mono
-  letter-spacing: .07em
-  text-transform: uppercase
+  flex-direction: column
+  min-height: 100vh
+  max-height: 100vh
+  border-right: 1px solid $rule
+  padding: unquote("clamp(28px, 3vw, 48px)")
 
-.research-label, .research-punctuation
-  color: $accent
+.sidebar-heading
+  margin-bottom: unquote("clamp(42px, 7vh, 84px)")
 
-.research-copy
+.sidebar-title
+  display: block
+  max-width: 290px
+  font-size: unquote("clamp(2.2rem, 3.1vw, 3.55rem)")
+  font-weight: 700
+  line-height: .94
+  letter-spacing: -.045em
+  text-decoration: none
+
+.sidebar-title:hover
   color: $ink
 
-.masthead-topline nav
+.sidebar-role
+  max-width: 275px
+  margin: 16px 0 0
+  color: $accent
+  font-size: .9rem
+  font-weight: 700
+  line-height: 1.25
+
+.sidebar-research
+  max-width: 285px
+  margin-bottom: 32px
+  font-size: .83rem
+
+.sidebar-research span
+  color: $accent
+  font-weight: 700
+  text-transform: uppercase
+  letter-spacing: .04em
+
+.sidebar-research p
+  margin: 6px 0 0
+  line-height: 1.3
+
+.sidebar-navigation nav,
+.sidebar-profiles
   display: flex
-  gap: 12px
-  margin: 0
+  flex-direction: column
+  align-items: flex-start
 
-.masthead-topline a
-  color: inherit
-  text-decoration: none
-  white-space: nowrap
+.sidebar-navigation a
+  margin-bottom: 14px
+  font-size: 1.36rem
+  font-weight: 700
+  line-height: 1.05
 
-.masthead-topline a + a::before
-  content: "|"
-  margin-right: 12px
+.sidebar-navigation a[aria-current="page"]
   color: $accent
 
-.masthead-main
-  display: grid
-  grid-template-columns: minmax(0, 1fr) 330px
-  align-items: end
-  gap: 32px
-  padding: unquote("clamp(24px, 5vw, 68px) 0 clamp(22px, 3vw, 38px)")
-  border-bottom: 3px solid $accent
+.sidebar-navigation svg
+  display: none
 
-.site-identity
-  display: flex
-  align-items: flex-end
-  gap: 18px
+.sidebar-profiles
+  margin-top: auto
+  padding-top: 38px
+
+.sidebar-profiles a
+  margin-top: 9px
+  font-size: .95rem
+  font-weight: 700
+
+.site-main
   min-width: 0
+  padding: unquote("clamp(46px, 5vw, 84px) clamp(34px, 5vw, 86px) 90px")
 
-.site-title
-  max-width: 980px
-  font-family: $serif
-  font-size: unquote("clamp(2.4rem, 5.3vw, 5.3rem)")
-  font-weight: 500
-  line-height: .76
-  letter-spacing: -.067em
-  text-decoration: none
+.page-content
+  width: unquote("min(100%, 1080px)")
+  margin: 0 auto
+  font-size: unquote("clamp(1.08rem, 1.35vw, 1.48rem)")
+  line-height: 1.2
 
-.site-title:hover
-  color: $ink
-
-.site-role
-  max-width: 190px
-  margin: 0 0 .35em
-  color: $accent
-  font: 500 .67rem/1.35 $mono
-
-.masthead-profile
+.profile-page
   display: grid
-  grid-template-columns: 130px minmax(0, 1fr)
-  align-items: end
-  gap: 14px
+  grid-template-columns: minmax(0, 1fr) unquote("clamp(210px, 22vw, 330px)")
+  align-items: start
+  gap: unquote("clamp(38px, 5vw, 86px)")
+  width: unquote("min(100%, 1280px)")
+  margin: 0 auto
 
-.masthead-portrait
+.profile-page .page-content
+  width: auto
+  margin: 0
+
+.profile-photo
+  margin: 0
+
+.profile-photo img
   display: block
-  width: 130px
-  aspect-ratio: 4 / 5
-  border: 1px solid $ink
+  width: 100%
+  height: auto
+  aspect-ratio: 1 / 1
   object-fit: cover
+  border: 1px solid $ink
 
-.masthead-socials
-  display: flex
-  flex-direction: column
-  justify-content: flex-end
-  align-self: stretch
-  margin: 0
-  border-left: 1px solid $accent
-  padding-left: 12px
-
-.masthead-socials a
-  display: flex
-  align-items: center
-  gap: 8px
-  border-bottom: 1px solid rgba(21, 21, 16, .25)
-  padding: 6px 0 5px
-  font: 500 .68rem/1.2 $mono
-  letter-spacing: .035em
-  text-decoration: none
-  text-transform: uppercase
-
-.masthead-socials svg, .masthead-socials .profile-logo
-  display: block
-  width: 15px!important
-  height: 15px!important
-  max-width: 15px
-  max-height: 15px
-  flex: 0 0 15px
-  object-fit: contain
-
-.page-shell
-  min-height: 55vh
-  padding: unquote("clamp(52px, 8vw, 112px) 0 clamp(72px, 11vw, 144px)")
-
-.page-shell > :not(.profile-header):not(.page-heading),
-.page-shell > main > :not(header),
-.page-shell > article > :not(header)
-  max-width: 760px
-  margin-left: unquote("clamp(0px, 19vw, 300px)")
-
-.page-shell > .cv-link
-  margin-right: auto!important
-  margin-left: auto!important
-  text-align: center
-  font-size: 1.25em!important
-  line-height: 1.42!important
-
-.profile-header, .page-heading
-  display: flex
-  flex-direction: column
-  align-items: center
-  margin-bottom: unquote("clamp(42px, 7vw, 86px)")
-  padding-bottom: unquote("clamp(22px, 3vw, 34px)")
-  text-align: center
-
-.profile-header::after, .page-heading::after
-  content: ""
-  width: 320px
-  max-width: 70vw
-  flex: 0 0 auto
-  margin-top: 22px
-  border-top: 1px dashed $accent
-
-.profile-header h1, .page-heading h1, main > header h1, article > header h1
-  max-width: 900px
-  margin: .1em auto 0
-  font-family: $serif
-  font-size: unquote("clamp(2.3rem, 4.5vw, 4.2rem)")
-  font-weight: 500
-  line-height: .83
-  letter-spacing: -.055em
-
-.kicker
-  margin: 0
+.page-eyebrow
+  margin: 0 0 38px!important
   color: $accent
-  font: 500 .74rem/1.4 $mono
+  font-size: .78rem!important
+  font-weight: 700
   letter-spacing: .08em
   text-transform: uppercase
 
-.page-shell p
-  margin-top: 0
-  margin-bottom: 1.35em
+.page-content p
+  margin: 0 0 1.75em
 
-.page-shell p:first-of-type:not(.kicker)
-  font-size: 1.25em
-  line-height: 1.42
+.page-content p:first-of-type:not(.page-eyebrow):not(.kicker)
+  font-weight: 700
 
-.publications-heading + p
-  font-size: inherit!important
-  line-height: inherit!important
-
-.page-shell strong
+.page-content strong
   display: block
-  margin-top: 2.8rem
-  padding-top: .65rem
-  border-top: 1px solid $line
+  margin: 3.2rem 0 1.15rem
+  padding-top: 1rem
+  border-top: 1px solid $rule
   color: $accent
-  font: 500 .7rem/1.4 $mono
-  letter-spacing: .07em
+  font-size: .92rem
+  letter-spacing: .05em
   text-transform: uppercase
 
-.page-publications strong
-  font-size: .88rem
+.page-heading
+  margin-bottom: unquote("clamp(48px, 7vw, 92px)")
+  padding-bottom: 20px
+  border-bottom: 1px solid $rule
 
-.page-projects > p + p::before
-  content: ""
-  display: block
-  width: 64px
-  height: 9px
-  margin: 2.1rem auto
+.page-heading h1
+  margin: 0
+  font-size: unquote("clamp(2.7rem, 5vw, 5.8rem)")
+  font-weight: 700
+  line-height: .9
+  letter-spacing: -.055em
+
+.kicker
+  margin: 0 0 8px!important
+  color: $accent
+  font-size: .78rem
+  font-weight: 700
+  letter-spacing: .08em
+  text-transform: uppercase
+
+.cv-link
+  font-size: 1.15em
+
+.page-projects > p + p
+  padding-top: 1.8em
   border-top: 1px solid $accent
-  border-bottom: 1px solid $accent
-  background: linear-gradient(to bottom, transparent 3px, $accent 3px, $accent 4px, transparent 4px)
 
-.page-shell hr
-  margin: 3rem 0
-  border: 0
-  border-top: 1px solid $line
-
-.page-shell img
+.page-content img
   max-width: 100%
 
-.site-footer
-  display: flex
-  justify-content: space-between
-  gap: 30px
-  border-top: 3px solid $ink
-  padding: 18px 0 30px
-  font: 400 .74rem/1.5 $mono
-  letter-spacing: .035em
-  text-transform: uppercase
+@media (max-width: 900px)
+  body
+    font-size: 16px
 
-.site-footer p
-  margin: 0
-
-.site-footer span
-  color: $accent
-
-.site-footer a
-  white-space: nowrap
-  text-decoration: none
-
-time
-  font-family: $mono
-  font-size: .7em
-
-@media (max-width: 760px)
-  .site-header, .page-shell, .site-footer
-    width: calc(100% - 28px)
-
-  .masthead-topline
-    flex-direction: column
-    align-items: flex-start
-    gap: 7px
-
-  .masthead-topline > span
+  .site-frame
     display: block
-    width: 100%
-    font-size: .56rem
-    letter-spacing: .035em
+
+  .site-sidebar
+    position: static
+    display: grid
+    grid-template-columns: minmax(0, 1fr) auto
+    gap: 24px 32px
+    min-height: auto
+    max-height: none
+    border-right: 0
+    border-bottom: 1px solid $rule
+    padding: 24px
+
+  .sidebar-heading,
+  .sidebar-research
+    margin: 0
+
+  .sidebar-title
+    font-size: unquote("clamp(2rem, 9vw, 3rem)")
+
+  .sidebar-role
+    max-width: 310px
+    margin-top: 10px
+    font-size: .78rem
+
+  .sidebar-research
+    align-self: end
+    max-width: 270px
+    text-align: right
+
+  .sidebar-navigation
+    grid-column: 1 / -1
+
+  .sidebar-navigation nav
+    flex-direction: row
+    flex-wrap: wrap
+    gap: 10px 24px
+
+  .sidebar-navigation a
+    margin: 0
+    font-size: 1.05rem
+
+  .sidebar-profiles
+    grid-column: 1 / -1
+    flex-direction: row
+    flex-wrap: wrap
+    gap: 9px 20px
+    margin: 0
+    padding: 0
+
+  .sidebar-profiles a
+    margin: 0
+    font-size: .83rem
+
+  .site-main
+    padding: 44px 24px 72px
+
+  .profile-page
+    grid-template-columns: minmax(0, 1fr) minmax(160px, 31vw)
+    gap: 32px
+
+  .page-content
+    font-size: unquote("clamp(1rem, 2.5vw, 1.2rem)")
+
+@media (max-width: 620px)
+  .site-sidebar
+    display: block
+    padding: 20px
+
+  .sidebar-heading
+    margin-bottom: 24px
+
+  .sidebar-research
+    max-width: none
+    margin-bottom: 24px
     text-align: left
 
-  .masthead-topline nav
-    width: 100%
+  .sidebar-navigation nav
     justify-content: center
-    gap: 8px
 
-  .masthead-topline a + a::before
-    margin-right: 6px
+  .sidebar-profiles
+    justify-content: center
+    margin-top: 22px
 
-  .masthead-topline a
-    font-size: .56rem
-    letter-spacing: 0
+  .site-main
+    padding: 36px 20px 64px
 
-  .masthead-main
-    grid-template-columns: minmax(0, 1fr) 176px
-    align-items: end
-    gap: 16px
-    padding: 30px 0 24px
+  .profile-page
+    display: flex
+    flex-direction: column-reverse
+    gap: 30px
 
-  .site-title
-    display: block
-    font-size: unquote("clamp(2rem, 8.5vw, 3.2rem)")
-    line-height: .8
+  .profile-photo
+    width: unquote("min(74vw, 330px)")
 
-  .site-identity
-    display: block
+  .page-eyebrow
+    margin-bottom: 24px!important
 
-  .site-role
-    max-width: 150px
-    margin-top: 10px
-    font-size: .55rem
+  .page-heading
+    margin-bottom: 44px
 
-  .masthead-profile
-    grid-template-columns: 88px minmax(0, 1fr)
-    align-items: stretch
-    gap: 8px
+  .page-heading h1
+    font-size: unquote("clamp(2.5rem, 14vw, 4rem)")
 
-  .masthead-portrait
-    width: 88px
-    height: auto
-    aspect-ratio: auto
-
-  .masthead-socials
-    padding-left: 8px
-
-  .masthead-socials a
-    padding: 4px 0 3px
-    font-size: .55rem
-
-  .page-shell
-    padding-top: 50px
-
-  .page-shell > :not(.profile-header):not(.page-heading),
-  .page-shell > main > :not(header),
-  .page-shell > article > :not(header)
-    margin-left: 0
-
-  .profile-header h1, .page-heading h1, main > header h1, article > header h1
-    font-size: unquote("clamp(2.2rem, 10vw, 3.4rem)")
-
-  .site-footer
-    display: block
-
-  .site-footer a
-    display: inline-block
-    margin-top: 12px
-
-@media (max-width: 390px)
-  .masthead-main
-    grid-template-columns: 1fr
-
-  .masthead-profile
-    width: 176px
-    margin-left: auto
+  .page-content p
+    margin-bottom: 1.55em
