@@ -8,7 +8,7 @@ permalink: /publications/
   <h1>Publications</h1>
 </div>
 
-**Peer-reviewed publications:**
+<p class="publication-section-label">Peer-reviewed publications:</p>
 
 Jefferson, R., Farzinnia, R., Verity, L., Jones, F., Fayette, R., Qualter, P., Woods, K., & Bond, C. (2026). Evaluation of context-specific early identification of autism models involving multiple stakeholders: Examples from three areas of England. _Journal of Autism and Developmental Disorders_, 1-12. [https://doi.org/10.1007/s10803-026-07589-6](https://doi.org/10.1007/s10803-026-07589-6)
 

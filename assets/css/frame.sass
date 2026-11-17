@@ -82,7 +82,7 @@ a:focus-visible
 
 .sidebar-research
   max-width: 285px
-  margin-bottom: 32px
+  margin-bottom: unquote("clamp(42px, 6vh, 64px)")
   font-size: .83rem
 
 .sidebar-research span
@@ -107,6 +107,9 @@ a:focus-visible
   font-weight: 700
   line-height: 1.05
 
+.sidebar-navigation a:last-child
+  margin-bottom: 0
+
 .sidebar-navigation a[aria-current="page"]
   color: $accent
 
@@ -114,8 +117,8 @@ a:focus-visible
   display: none
 
 .sidebar-profiles
-  margin-top: auto
-  padding-top: 38px
+  margin-top: unquote("clamp(42px, 6vh, 64px)")
+  padding-top: 0
 
 .sidebar-profiles a
   display: flex
@@ -180,6 +183,14 @@ a:focus-visible
 
 .page-publications > p
   font-weight: 400
+
+.publication-section-label
+  margin: 0 0 1.15rem!important
+  color: $accent
+  font-size: .92rem
+  font-weight: 700!important
+  letter-spacing: .05em
+  text-transform: uppercase
 
 .page-content strong
   display: block
