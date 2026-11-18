@@ -5,7 +5,7 @@ permalink: /about/
 ---
 <p class="page-eyebrow">About me</p>
 
-I'm Reihaneh, a PhD student at The University of Manchester, supervised by [Prof Neil Humphrey](https://research.manchester.ac.uk/en/persons/neil.humphrey) and [Dr Louise Black](https://www.mmu.ac.uk/about-us/faculties/health-and-education/schools/psychology/staff/profile/louise-black#t-tabs_staff_profile-0).
+I'm Reihaneh, a PhD student at The University of Manchester, supervised by [Prof Neil Humphrey](https://research.manchester.ac.uk/en/persons/neil.humphrey), [Dr Louise Black](https://www.mmu.ac.uk/about-us/faculties/health-and-education/schools/psychology/staff/profile/louise-black#t-tabs_staff_profile-0), and [Dr João Santos](https://research.manchester.ac.uk/en/persons/joao.santos/).
 
 I am interested in how we measure and model mental health difficulties, particularly among adolescents and young adults. My research focuses on measurement invariance, reporting behaviours and careless responding, and changes in how questionnaire items function across groups and over time.
 
