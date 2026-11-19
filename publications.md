@@ -10,6 +10,8 @@ permalink: /publications/
 
 <p class="publication-section-label">Peer-reviewed publications:</p>
 
+Cameron, L., Farzinnia, R., Cheng, Q., Jenkins, R., & Humphrey, N. (2026). The association between school staff support and wellbeing for students with poor quality social relationships. _Psychology in the Schools_, 1–14. [https://doi.org/10.1002/pits.70217](https://doi.org/10.1002/pits.70217)
+
 Jefferson, R., Farzinnia, R., Verity, L., Jones, F., Fayette, R., Qualter, P., Woods, K., & Bond, C. (2026). Evaluation of context-specific early identification of autism models involving multiple stakeholders: Examples from three areas of England. _Journal of Autism and Developmental Disorders_, 1-12. [https://doi.org/10.1007/s10803-026-07589-6](https://doi.org/10.1007/s10803-026-07589-6)
 
 Marquez, J., Panayiotou, M., Farzinnia, R., Cheng, Q., & Humphrey, N. (2025). Correction: Longitudinal relationships across sleep, physical activity, and mental wellbeing in early-to-mid-adolescence: a developmental cascades investigation. Quality of life research: _an international journal of quality of life aspects of treatment, care and rehabilitation_, _34_(5), 1233-1250. [https://doi.org/10.1007/s11136-025-03921-2](https://doi.org/10.1007/s11136-025-03921-2)
@@ -25,5 +27,3 @@ Farzinnia, R., Black, L., & Humphrey, N. (2026). A cross-lagged panel network mo
 Hickman Dunne, J., Black, L., Davies, J., Jones, F., Anderton, M., Nanda, P., Beissel, F., Bruke, L., Farzinnia, R., & Panayiotou, M. (2026). Developing an adolescent self-report measure of social media experience: Insights from cognitive interviews. [osf.io/preprints/psyarxiv/uzrc9_v1](https://osf.io/preprints/psyarxiv/uzrc9_v1)
 
 Hickman Dunne, J., Burke, L., Davies, J., Black, L., Jones, F., Anderton, M., Nanda, P., Beissel, F., Farzinnia, R., & Panayiotou, M. (2026). Planning on doing cognitive interviews? Reflections and recommendations from the #So.Me study. [osf.io/preprints/psyarxiv/8xv2c_v1](https://osf.io/preprints/psyarxiv/8xv2c_v1)
-
-Cameron, L., Farzinnia, R., Cheng, Q., Jenkins, R., & Humphrey, N. (2025). The association between school staff support and wellbeing for students with poor quality social relationships. [https://doi.org/10.31234/osf.io/sah9r_v1](https://doi.org/10.31234/osf.io/sah9r_v1)
